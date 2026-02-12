@@ -1,0 +1,88 @@
+---
+import BaseLayout from "@/layouts/Base.astro";
+
+const title = "Design Variants Comparison";
+const description = "Testing three different design systems for the site.";
+---
+
+<BaseLayout meta={{ title, description }}>
+	<div class="space-y-12">
+		<header>
+			<h1 class="title">Design Comparison</h1>
+			<p class="mt-4">
+				Below are three different design variants for the site, as suggested. Each section applies a
+				unique combination of fonts, line-height, colors, and max-width.
+			</p>
+		</header>
+
+		<!-- Variant 1 -->
+		<section class="variant-wrapper v1 rounded-lg border border-gray-800">
+			<div class="variant-content">
+				<span class="mb-2 block text-xs font-bold tracking-widest text-gray-400 uppercase"
+					>Variant 1: Modern & Clean (Dark)</span
+				>
+				<h1>Hello World!</h1>
+				<p>
+					Hi, I’m a theme for Astro, a simple starter that you can use to create your website or
+					blog. If you want to know more about how you can customise me, add more posts, and make it
+					your own, click on the GitHub icon link below and it will take you to my repo.
+				</p>
+				<p class="mt-4">
+					<strong>Fonts:</strong> Outfit (Headings) + Inter (Body)<br />
+					<strong>Line-height:</strong> 1.625<br />
+					<strong>Colors:</strong> #1A1A1A / #F9F9F9
+				</p>
+				<p class="mt-4">
+					<a href="#" class="cactus-link text-blue-400">Find me on GitHub</a>
+				</p>
+			</div>
+		</section>
+
+		<!-- Variant 2 -->
+		<section class="variant-wrapper v2 rounded-lg border border-gray-800">
+			<div class="variant-content">
+				<span class="mb-2 block text-xs font-bold tracking-widest text-gray-500 uppercase"
+					>Variant 2: Editorial & Document (Dark)</span
+				>
+				<h1>Hello World!</h1>
+				<p>
+					Hi, I’m a theme for Astro, a simple starter that you can use to create your website or
+					blog. If you want to know more about how you can customise me, add more posts, and make it
+					your own, click on the GitHub icon link below and it will take you to my repo.
+				</p>
+				<p class="mt-4">
+					<strong>Fonts:</strong> IBM Plex Mono (Headings) + IBM Plex Serif (Body)<br />
+					<strong>Line-height:</strong> 1.7<br />
+					<strong>Colors:</strong> #111111 / #F2F2F2
+				</p>
+				<p class="mt-4">
+					<a href="#" class="cactus-link text-blue-400">Find me on GitHub</a>
+				</p>
+			</div>
+		</section>
+
+		<!-- Variant 3 -->
+		<section class="variant-wrapper v3 rounded-lg border border-[#333]">
+			<div class="variant-content">
+				<span class="mb-2 block text-xs font-bold tracking-widest text-gray-500 uppercase"
+					>Variant 3: Deep Tech (Dark)</span
+				>
+				<h1>Hello World!</h1>
+				<p>
+					Hi, I’m a theme for Astro, a simple starter that you can use to create your website or
+					blog. If you want to know more about how you can customise me, add more posts, and make it
+					your own, click on the GitHub icon link below and it will take you to my repo.
+				</p>
+				<p class="mt-4">
+					<strong>Fonts:</strong> Geist Mono (All)<br />
+					<strong>Line-height:</strong> 1.8<br />
+					<strong>Letter-spacing:</strong> -0.02em<br />
+					<strong>Colors:</strong> #121212 / #CCCCCC
+				</p>
+				<p class="mt-4">
+					<a href="#" class="cactus-link">Find me on GitHub</a>
+				</p>
+			</div>
+		</section>
+	</div>
+</BaseLayout>

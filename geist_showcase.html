@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Geist Font Showcase</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@latest/dist/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@latest/index.css"
+		/>
+		<style>
+			:root {
+				--bg: #0a0a0a;
+				--text: #ededed;
+				--accent: #0070f3;
+				--card-bg: #111;
+				--border: #333;
+			}
+			body {
+				background-color: var(--bg);
+				color: var(--text);
+				font-family: "Geist Sans", sans-serif;
+				margin: 0;
+				padding: 40px;
+				line-height: 1.6;
+			}
+			.container {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			h1 {
+				font-size: 3rem;
+				font-weight: 800;
+				letter-spacing: -0.05em;
+				margin-bottom: 2rem;
+				text-align: center;
+			}
+			section {
+				background: var(--card-bg);
+				border: 1px solid var(--border);
+				border-radius: 12px;
+				padding: 30px;
+				margin-bottom: 40px;
+				transition: transform 0.2s ease;
+			}
+			section:hover {
+				border-color: var(--accent);
+			}
+			.label {
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				color: #888;
+				margin-bottom: 1rem;
+				display: block;
+			}
+			.sample-heading {
+				font-size: 2rem;
+				font-weight: 700;
+				margin: 10px 0;
+				letter-spacing: -0.02em;
+			}
+			.sample-body {
+				font-size: 1.1rem;
+				margin: 20px 0;
+				color: #a1a1a1;
+			}
+			.sample-meta {
+				display: flex;
+				gap: 20px;
+				font-size: 0.9rem;
+				color: #666;
+				margin-top: 20px;
+				padding-top: 20px;
+				border-top: 1px solid var(--border);
+			}
+			a {
+				color: var(--accent);
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+
+			/* Font Specific Classes */
+			.font-sans {
+				font-family: "Geist Sans", sans-serif;
+			}
+			.font-mono {
+				font-family: "Geist Mono", monospace;
+			}
+
+			.numbers {
+				font-size: 1.25rem;
+				letter-spacing: 0.1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Geist Typography</h1>
+
+			<!-- GEIST SANS -->
+			<section class="font-sans">
+				<span class="label">Geist Sans (Standard)</span>
+				<div class="sample-heading">The quick brown fox jumps over the lazy dog.</div>
+				<p class="sample-body">
+					This is a demonstration of Geist Sans. It is designed for simplicity, minimalism, and
+					speed, drawing inspiration from the Swiss design movement. It fits perfectly in modern web
+					applications.
+				</p>
+				<div class="numbers">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="sample-meta">
+					<span>Today: February 11, 2026</span>
+					<a href="https://vercel.com/fonts">Download Geist Sans</a>
+				</div>
+			</section>
+
+			<!-- GEIST MONO -->
+			<section class="font-mono">
+				<span class="label">Geist Mono (Monospaced)</span>
+				<div class="sample-heading">function geist() { return 101; }</div>
+				<p class="sample-body">
+					This version is crafted specifically for code editors and technical interfaces. It
+					maintains high legibility even at small sizes and ensures every character has identical
+					width.
+				</p>
+				<div class="numbers">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="sample-meta">
+					<span>2026-02-11</span>
+					<a href="https://github.com/vercel/geist-font">GitHub Repository</a>
+				</div>
+			</section>
+
+			<!-- IBM PLEX MONO -->
+			<section style="font-family: 'IBM Plex Mono', monospace">
+				<span class="label">IBM Plex Mono (Current Theme)</span>
+				<div class="sample-heading">The quick brown fox jumps over the lazy dog.</div>
+				<p class="sample-body">
+					Designed by IBM to illustrate the unique relationship between mankind and machine. This
+					is the primary font currently applied to your local Astro site.
+				</p>
+				<div class="numbers">0 1 2 3 4 5 6 7 8 9</div>
+				<div class="sample-meta">
+					<span>Today: February 11, 2026</span>
+					<a href="https://github.com/IBM/plex">IBM Plex GitHub</a>
+				</div>
+			</section>
+
+			<p style="text-align: center; color: #444; font-size: 0.8rem">
+				* Note: "Geist Pixel" variants (Square, Line, Grid) are typically used for decorative
+				headlines and are part of the extended Geist package.
+			</p>
+		</div>
+	</body>
+</html>

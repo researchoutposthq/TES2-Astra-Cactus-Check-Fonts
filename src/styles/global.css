@@ -1,4 +1,3 @@
-/* would like to ignore ./src/pages/og-image/[slug].png.ts */
 @import "tailwindcss";
 /* config for tailwindcss-typography plugin */
 @config "../../tailwind.config.ts";
@@ -81,4 +80,70 @@
 	--tw-prose-links: var(--color-global-text);
 	--tw-prose-quotes: var(--color-quote);
 	--tw-prose-th-borders: #666;
+}
+
+/* Design Variants Comparison Classes */
+.variant-wrapper {
+	padding: 4rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.variant-content {
+	width: 100%;
+}
+
+/* Variant 1: Modern/Clean (Dark) */
+.v1 {
+	background-color: #1a1a1a;
+	color: #f9f9f9;
+}
+.v1 .variant-content {
+	max-width: 680px;
+	font-family: "Inter", sans-serif;
+	line-height: 1.625;
+}
+.v1 h1,
+.v1 h2,
+.v1 h3 {
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+}
+
+/* Variant 2: Editorial/Document (Dark) */
+.v2 {
+	background-color: #111111;
+	color: #f2f2f2;
+}
+.v2 .variant-content {
+	max-width: 720px;
+	font-family: "IBM Plex Serif", serif;
+	line-height: 1.7;
+}
+.v2 h1,
+.v2 h2,
+.v2 h3 {
+	font-family: "IBM Plex Mono", monospace;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+/* Variant 3: Deep Tech */
+.v3 {
+	background-color: #121212;
+	color: #cccccc;
+}
+.v3 .variant-content {
+	max-width: 640px;
+	font-family: "Geist Mono", monospace;
+	line-height: 1.8;
+	letter-spacing: -0.02em;
+}
+.v3 h1,
+.v3 h2,
+.v3 h3 {
+	font-family: "Geist Mono", monospace;
 }
